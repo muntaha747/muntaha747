@@ -61,6 +61,59 @@ I'm a **Platform/DevOps Engineer with 6+ years of experience** designing, automa
 
 ---
 
+## 🧰 Extended Tool Stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=aws,kubernetes,docker,kafka,jenkins,githubactions,terraform,helm,argocd,prometheus,grafana,python,linux,azure" alt="Tool icons" />
+
+### ☁️ Cloud & Networking
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![VPC](https://img.shields.io/badge/VPC-8C4FFF?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Subnets](https://img.shields.io/badge/Subnets-3F8624?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Transit Gateway](https://img.shields.io/badge/Transit%20Gateway-5A29E4?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Route 53](https://img.shields.io/badge/Route%2053-8C4FFF?style=for-the-badge&logo=amazonroute53&logoColor=white)
+![IAM](https://img.shields.io/badge/IAM-DD344C?style=for-the-badge&logo=amazonaws&logoColor=white)
+![S3](https://img.shields.io/badge/S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
+![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
+![CloudFormation](https://img.shields.io/badge/CloudFormation-FF4F8B?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+
+### ⚓ Kubernetes & Containers
+![EKS](https://img.shields.io/badge/Amazon%20EKS-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![AKS](https://img.shields.io/badge/Azure%20AKS-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![GKE](https://img.shields.io/badge/GKE-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+![Karpenter](https://img.shields.io/badge/Karpenter-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white)
+![Istio](https://img.shields.io/badge/Istio-466BB0?style=for-the-badge&logo=istio&logoColor=white)
+
+### 📨 Event-Driven & Streaming
+![Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
+![SQS](https://img.shields.io/badge/Amazon%20SQS-FF4F8B?style=for-the-badge&logo=amazonsqs&logoColor=white)
+![SNS](https://img.shields.io/badge/Amazon%20SNS-FF4F8B?style=for-the-badge&logo=amazonsns&logoColor=white)
+![EventBridge](https://img.shields.io/badge/EventBridge-FF4F8B?style=for-the-badge&logo=amazoneventbridge&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
+
+### 🔁 CI/CD & GitOps
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
+![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
+![Checkov](https://img.shields.io/badge/Checkov-43E97B?style=for-the-badge&logoColor=white)
+
+### 📊 Observability & Languages
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+</div>
+
 ## 🌟 Flagship Project
 
 ### [Production-Grade-EKS-Microservices](https://github.com/muntaha747/Production-Grade-EKS-Microservices)
