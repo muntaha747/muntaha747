@@ -1,12 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,6,11,20,30&height=230&section=header&text=Hi%2C%20I%27m%20Muntaha%20Bhaiji%20%F0%9F%91%8B&fontSize=52&fontColor=ffffff&animation=twinkling&fontAlignY=40&desc=Senior%20DevOps%20%26%20Platform%20Engineer&descAlignY=62&descSize=26&descColor=ffffff" alt="Header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,6,11,20,30&height=130&section=header&text=Hi%2C%20I%27m%20Muntaha%20Bhaiji%20%F0%9F%91%8B&fontSize=38&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Senior%20DevOps%20%26%20Platform%20Engineer&descAlignY=66&descSize=18&descColor=ffffff" alt="Header" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=34&duration=4000&pause=800&color=FF00E5&center=true&vCenter=true&repeat=true&width=900&height=70&lines=Senior+DevOps+%26+Platform+Engineer;Kubernetes+%7C+Terraform+%7C+AWS+%7C+EKS" alt="Animated title" />
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=26&duration=4000&pause=800&color=FF00E5&center=true&vCenter=true&repeat=true&width=900&height=40&lines=Senior+DevOps+%26+Platform+Engineer;Kubernetes+%7C+Terraform+%7C+AWS+%7C+EKS" alt="Animated title" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=00F5D4&center=true&vCenter=true&multiline=true&width=900&height=80&lines=6%2B+Years+Building+Cloud-Native+Infrastructure+%F0%9F%9A%80;Production-Grade+Platforms+%7C+GitOps+%7C+FinOps+%7C+DevSecOps" alt="Typing SVG" />
-
-<br/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=3000&pause=1000&color=00F5D4&center=true&vCenter=true&width=900&height=30&lines=6%2B+Years+Building+Cloud-Native+Infrastructure+%F0%9F%9A%80;Production-Grade+Platforms+%7C+GitOps+%7C+FinOps+%7C+DevSecOps" alt="Typing SVG" />
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
 [![GitHub followers](https://img.shields.io/github/followers/muntaha747?style=for-the-badge&logo=github&color=181717&labelColor=000)](https://github.com/muntaha747?tab=followers)
