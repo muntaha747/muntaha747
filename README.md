@@ -27,6 +27,15 @@ I'm a **Platform/DevOps Engineer with 6+ years of experience** designing, automa
 - 🤝 Open to collaborating on Kubernetes, Terraform, and AWS platform-engineering projects
 - ⚡ Fun fact: I'd rather automate it once than click it twice
 
+
+<div align="center">
+
+### 🗺️ Regional Architecture: FinTech Platform
+
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/architecture-overview-v2.svg" width="100%" alt="Regional architecture: Edge, App, Data and Ops VPCs on one Transit Gateway"/>
+
+</div>
+
 ---
 
 ## 🛠️ Tool Stack
