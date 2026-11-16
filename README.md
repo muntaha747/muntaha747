@@ -30,7 +30,7 @@ I'm a **Platform/DevOps Engineer with 6+ years of experience** designing, automa
 
 ### 🗺️ Regional Architecture: FinTech Platform
 
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/architecture-overview-v2.svg" width="100%" alt="Regional architecture: Edge, App, Data and Ops VPCs on one Transit Gateway"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/architecture-overview-v2.svg" width="100%" alt="Regional architecture: Edge, App, Data and Ops VPCs on one Transit Gateway"/>
 
 </div>
 
@@ -124,7 +124,7 @@ I'm a **Platform/DevOps Engineer with 6+ years of experience** designing, automa
 
 **[→ Explore the repo](https://github.com/muntaha747/Production-Grade-EKS-Microservices)**
 
-### [FinTech-Enterprise-Project](https://github.com/muntaha747/FinTech-Enterprise-Project)
+### [FinTech-Enterprise-Project](https://github.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform)
 > An **AWS FinTech platform** built layer by layer with Terraform: four isolated VPCs joined by a Transit Gateway, Amazon EKS with blue/green node groups, Checkov-scanned infrastructure, and a GitHub Actions pipeline that deploys with OIDC, so no AWS keys are stored.
 
 **Highlights:**
@@ -134,7 +134,7 @@ I'm a **Platform/DevOps Engineer with 6+ years of experience** designing, automa
 - ✅ **GitHub Actions to AWS without keys** using OIDC, plus remote state with locking
 - ✅ Observability and MLOps layers planned on the same platform
 
-**[→ Explore the repo](https://github.com/muntaha747/FinTech-Enterprise-Project)**
+**[→ Explore the repo](https://github.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform)**
 
 ---
 
@@ -144,7 +144,7 @@ I'm a **Platform/DevOps Engineer with 6+ years of experience** designing, automa
 > - Four isolated VPCs joined by a Transit Gateway, with Terraform-built infrastructure
 > - Amazon EKS with blue/green node groups and security scanning with Checkov
 > - GitHub Actions deployments that use OIDC, so no AWS keys are stored
-> - Full write-up below, and code in [FinTech-Enterprise-Project](https://github.com/muntaha747/FinTech-Enterprise-Project)
+> - Full write-up below, and code in [FinTech-Enterprise-Project](https://github.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform)
 
 ---
 
@@ -287,7 +287,7 @@ The project grows in stages. Each stage adds one layer, with security built in f
 🔵 **Target design** (layers 03 and 04 are partly 🟢 built)
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/infrastructure-layers-v2.svg" width="100%" alt="Six infrastructure layers plus the identity and observability pillars"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/infrastructure-layers-v2.svg" width="100%" alt="Six infrastructure layers plus the identity and observability pillars"/>
 </div>
 
 **📝 What this shows.** The platform is a stack of six layers. A customer request enters at the top (**Edge**) and travels down: through the **Network**, into **Kubernetes**, to the **Application** code and finally to the **Data** stores. **CI/CD** is the layer that ships every other layer. Two pillars stand beside the stack because every layer needs them: **Identity & Access** (who is allowed to do what) and **Observability** (can we see what is happening).
@@ -303,7 +303,7 @@ Thinking in layers keeps responsibilities clear. A network engineer can change a
 🔵 **Target design** (the VPCs, Transit Gateway, NAT, endpoints and EKS are 🟢 built)
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/architecture-overview-v2.svg" width="100%" alt="Regional architecture: Edge, App, Data and Ops VPCs on one Transit Gateway"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/architecture-overview-v2.svg" width="100%" alt="Regional architecture: Edge, App, Data and Ops VPCs on one Transit Gateway"/>
 </div>
 
 **📝 What this shows.** One AWS region, four VPCs, one hub. Each VPC has one job:
@@ -491,12 +491,12 @@ The **Transit Gateway** in the middle is the only road between them. AWS service
 
 ## 3. Terraform Infrastructure: The 4 VPCs
 
-🟢 **Built** · code in [`Terraform-FinTech-Infra/`](https://github.com/muntaha747/FinTech-Enterprise-Project/tree/main/Terraform-FinTech-Infra/) · detailed guide in [`Terraform-FinTech-Infra/README.md`](https://github.com/muntaha747/FinTech-Enterprise-Project/blob/main/Terraform-FinTech-Infra/README.md)
+🟢 **Built** · code in [`Terraform-FinTech-Infra/`](https://github.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/tree/main/Terraform-FinTech-Infra/) · detailed guide in [`Terraform-FinTech-Infra/README.md`](https://github.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/blob/main/Terraform-FinTech-Infra/README.md)
 
 ### 3.1 What Terraform Builds Today
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/terraform-infra-4vpcs.svg" width="100%" alt="What Terraform builds: 4 VPCs, a Transit Gateway and EKS in the App VPC, with live traffic flows"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/terraform-infra-4vpcs.svg" width="100%" alt="What Terraform builds: 4 VPCs, a Transit Gateway and EKS in the App VPC, with live traffic flows"/>
 </div>
 
 **📝 What this shows.** This is the real infrastructure that `terraform apply` creates for one environment. Follow the coloured arrows:
@@ -547,7 +547,7 @@ Think of each VPC as a **separate building** with its own address range. Buildin
 ### 3.3 Hub-and-Spoke Network
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/network-topology-v2.svg" width="100%" alt="Hub-and-spoke network: every subnet per Availability Zone and the Transit Gateway attachments"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/network-topology-v2.svg" width="100%" alt="Hub-and-spoke network: every subnet per Availability Zone and the Transit Gateway attachments"/>
 </div>
 
 **📝 What this shows.** The exact subnets of the Prod environment, laid out per Availability Zone. Every VPC is a **spoke** and the Transit Gateway is the **hub**. The dots moving along the dashed lines are packets crossing a Transit Gateway attachment.
@@ -561,7 +561,7 @@ Notice the App VPC has two rows of private subnets: EKS spreads its control-plan
 ### 3.4 One Module, Four VPCs
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/terraform-foreach-v2.svg" width="100%" alt="terraform.tfvars drives one module that creates four VPCs and attaches them to the Transit Gateway"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/terraform-foreach-v2.svg" width="100%" alt="terraform.tfvars drives one module that creates four VPCs and attaches them to the Transit Gateway"/>
 </div>
 
 **📝 What this shows.** All four VPCs come from **one reusable module** (`Networking/modules/vpc`). The root module loops over a map in `terraform.tfvars` with `for_each`: one map entry becomes one complete VPC with its subnets, route tables, security groups, NAT, endpoints, flow logs and Transit Gateway attachment.
@@ -587,7 +587,7 @@ Adding a fifth VPC is a **data change**, not a code change: add one entry to the
 ### 3.5 VPC Endpoints
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/vpc-endpoints.svg" width="100%" alt="Gateway and interface VPC endpoints compared with the internet path they replace"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/vpc-endpoints.svg" width="100%" alt="Gateway and interface VPC endpoints compared with the internet path they replace"/>
 </div>
 
 **📝 What this shows.** Two kinds of private tunnel to AWS services, and the path they replace:
@@ -603,7 +603,7 @@ Adding a fifth VPC is a **data change**, not a code change: add one entry to the
 ### 3.6 How a Packet Picks Its Path
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/route-decision.svg" width="100%" alt="Route table decision tree: local, gateway endpoint, interface endpoint, Transit Gateway, NAT or dropped"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/route-decision.svg" width="100%" alt="Route table decision tree: local, gateway endpoint, interface endpoint, Transit Gateway, NAT or dropped"/>
 </div>
 
 **📝 What this shows.** The questions a route table asks about every packet leaving a pod, in order:
@@ -621,7 +621,7 @@ Adding a fifth VPC is a **data change**, not a code change: add one entry to the
 ### 3.7 Transit Gateway Route Lookup
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/tgw-lookup.svg" width="100%" alt="Step by step: a pod in the App VPC reaching a database in the Data VPC through the Transit Gateway"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/tgw-lookup.svg" width="100%" alt="Step by step: a pod in the App VPC reaching a database in the Data VPC through the Transit Gateway"/>
 </div>
 
 **📝 What this shows.** One request from an app pod to a database, step by step. The App route table sends it to the Transit Gateway, the Transit Gateway's own route table finds which attachment owns the destination CIDR, and the packet is delivered into the Data VPC. The reply takes the same road back.
@@ -656,7 +656,7 @@ Routing only makes the connection *possible*. The Database VPC's security group 
 ### 4.1 Live Traffic Flow
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/traffic-flow-v2.svg" width="100%" alt="Six traffic types moving through the platform at once"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/traffic-flow-v2.svg" width="100%" alt="Six traffic types moving through the platform at once"/>
 </div>
 
 **📝 What this shows.** Six kinds of traffic moving at the same time: the customer request and its response, database queries, metrics and logs, private AWS access, and outbound calls. Each one has its own colour and its own path, and none of them shares a path it does not need.
@@ -668,7 +668,7 @@ Routing only makes the connection *possible*. The Database VPC's security group 
 ### 4.2 One Payment, Hop by Hop
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/payment-hops.svg" width="100%" alt="Every network hop of one payment request"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/payment-hops.svg" width="100%" alt="Every network hop of one payment request"/>
 </div>
 
 **📝 What this shows.** Every network hop of a single payment, numbered in order: DNS lookup, CloudFront and WAF at the edge, API Gateway, across the Transit Gateway to the load balancer and the payment pod, a short-lived database credential from Vault, the database write, the outbound call to the card network through NAT, and the response travelling back.
@@ -680,7 +680,7 @@ Routing only makes the connection *possible*. The Database VPC's security group 
 ### 4.3 One Payment, Through the Services
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/payment-flow.svg" width="100%" alt="Payment flow through BFF, Payment, Fraud, Ledger, Kafka and Notification"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/payment-flow.svg" width="100%" alt="Payment flow through BFF, Payment, Fraud, Ledger, Kafka and Notification"/>
 </div>
 
 **📝 What this shows.** The same payment seen from the application side. The BFF hands it to the Payment service, which asks the Fraud service for a risk score. A **low-risk** payment is written to the ledger and an event is published; a **high-risk** one is held and flagged. The Notification service reacts to the event, so sending a receipt never slows down the payment itself.
@@ -693,10 +693,10 @@ Routing only makes the connection *possible*. The Database VPC's security group 
 
 ## 5. Kubernetes Platform on EKS
 
-🟢 **Built** · code in [`Terraform-FinTech-Infra/EKS/`](https://github.com/muntaha747/FinTech-Enterprise-Project/tree/main/Terraform-FinTech-Infra/EKS/)
+🟢 **Built** · code in [`Terraform-FinTech-Infra/EKS/`](https://github.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/tree/main/Terraform-FinTech-Infra/EKS/)
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/eks-platform.svg" width="100%" alt="EKS control plane, four node groups, the Cluster Autoscaler loop and the blue/green switch"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/eks-platform.svg" width="100%" alt="EKS control plane, four node groups, the Cluster Autoscaler loop and the blue/green switch"/>
 </div>
 
 **📝 What this shows.** Everything one Terraform module (`EKS/modules/eks_cluster`) builds:
@@ -740,7 +740,7 @@ All five services run on **Amazon EKS in the App VPC**, behind the load balancer
 | 📒 **MLflow** | ops VPC | Experiment tracking and model registry |
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/microservices.svg" width="100%" alt="Service calls, Kafka events, data queries and model inference between the five microservices"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/microservices.svg" width="100%" alt="Service calls, Kafka events, data queries and model inference between the five microservices"/>
 </div>
 
 **📝 What this shows.** How the five services depend on each other. Solid service calls go left to right from the load balancer. Kafka events decouple the Notification service. Every database lives in the **Data VPC** and is reached over the Transit Gateway, and the Fraud service calls a model served by **KServe**.
@@ -760,7 +760,7 @@ Every layer adds its own control, and nothing depends on a single defence.
 🔵 **Target design**
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/security-layers.svg" width="100%" alt="A clean request passes nine gates while a malicious one is blocked at the WAF"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/security-layers.svg" width="100%" alt="A clean request passes nine gates while a malicious one is blocked at the WAF"/>
 </div>
 
 **📝 What this shows.** A clean request passes nine gates on its way to a service. A malicious one (here, an SQL injection) is stopped early at the WAF and never reaches the network. The six rows underneath are the defence layers: edge, network, orchestration, identity, detection, and model and data trust.
@@ -774,7 +774,7 @@ Every layer adds its own control, and nothing depends on a single defence.
 🟢 **Built**
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/security-hardening.svg" width="100%" alt="Checkov scan results before and after, with the fixes applied to each stack"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/security-hardening.svg" width="100%" alt="Checkov scan results before and after, with the fixes applied to each stack"/>
 </div>
 
 **📝 What this shows.** [Checkov](https://www.checkov.io/) reads the Terraform code and compares it with hundreds of security rules. The first scan found **156 failures across 22 rules**. After the fixes it reports **0 failed, 1000 passed**. Each fix has a comment next to the code that says **what changed and why**, for example:
@@ -798,10 +798,10 @@ Twelve checks are **skipped on purpose**, each with the reason written in the co
 
 ### 7.3 IAM Roles per Environment
 
-🟢 **Built** · code in [`Terraform-FinTech-Infra/IAM/`](https://github.com/muntaha747/FinTech-Enterprise-Project/tree/main/Terraform-FinTech-Infra/IAM/)
+🟢 **Built** · code in [`Terraform-FinTech-Infra/IAM/`](https://github.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/tree/main/Terraform-FinTech-Infra/IAM/)
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/iam-roles-v2.svg" width="100%" alt="Who assumes which IAM role, and which environment enables it"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/iam-roles-v2.svg" width="100%" alt="Who assumes which IAM role, and which environment enables it"/>
 </div>
 
 **📝 What this shows.** Three kinds of role, created by one module that runs once per environment:
@@ -823,7 +823,7 @@ The module works out the permissions **from the environment name**, so `stage` a
 🟢 **Built**
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/github-oidc.svg" width="100%" alt="GitHub Actions getting short-lived AWS credentials through OIDC"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/github-oidc.svg" width="100%" alt="GitHub Actions getting short-lived AWS credentials through OIDC"/>
 </div>
 
 **📝 What this shows.** How the pipeline logs in to AWS with **no stored access keys**. GitHub issues a signed identity token for the workflow run. AWS STS checks that the token really comes from **this repository**, and only then hands back **temporary credentials** that expire on their own.
@@ -890,7 +890,7 @@ Every root folder holds the same seven files, so anyone who knows one stack can 
 ### 8.2 Remote State, One File per Stack
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/state-backend-v5.svg" width="100%" alt="Eleven Terraform state files in one S3 bucket, one per stack and environment"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/state-backend-v5.svg" width="100%" alt="Eleven Terraform state files in one S3 bucket, one per stack and environment"/>
 </div>
 
 **📝 What this shows.** Terraform remembers what it built in a **state file**. Here every stack and every environment has **its own** state file inside one encrypted S3 bucket: three global files and four each for Networking and EKS.
@@ -911,7 +911,7 @@ The teal arrow is the only link between stacks: `EKS/<env>` **reads** the output
 ### 8.3 State Locking
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/state-locking.svg" width="100%" alt="Native S3 state locking: one writer at a time, no DynamoDB table"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/state-locking.svg" width="100%" alt="Native S3 state locking: one writer at a time, no DynamoDB table"/>
 </div>
 
 **📝 What this shows.** What happens when two people run `terraform apply` on the same stack. The first run creates a small `.tflock` file next to the state. The second run sees the lock and stops instead of overwriting the first one's work. When the first run finishes, the lock is deleted and the second can proceed.
@@ -943,7 +943,7 @@ This uses Terraform's **native S3 locking** (`use_lockfile = true`), so no Dynam
 🟢 **Built** · workflows in [`.github/workflows/`](.github/workflows/)
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/pipeline-environments.svg" width="100%" alt="The deploy pipeline order, the four environments and the reverse destroy order"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/pipeline-environments.svg" width="100%" alt="The deploy pipeline order, the four environments and the reverse destroy order"/>
 </div>
 
 **📝 What this shows.**
@@ -964,7 +964,7 @@ Deploy and destroy share one **concurrency group**, so they can never run at the
 🔵 **Target design**
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/cicd-gitops.svg" width="100%" alt="Application images, infrastructure changes and models flowing to production"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/cicd-gitops.svg" width="100%" alt="Application images, infrastructure changes and models flowing to production"/>
 </div>
 
 **📝 What this shows.** Three delivery paths that share the same principles:
@@ -984,7 +984,7 @@ Deploy and destroy share one **concurrency group**, so they can never run at the
 🔵 **Target design**
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/observability.svg" width="100%" alt="Metrics, logs, AWS telemetry, runtime security events and ML drift flowing into Grafana"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/observability.svg" width="100%" alt="Metrics, logs, AWS telemetry, runtime security events and ML drift flowing into Grafana"/>
 </div>
 
 **📝 What this shows.** Five kinds of signal, each collected by the right tool and all ending in **Grafana**: metrics (Prometheus), logs (Logstash → Loki and OpenSearch), AWS telemetry (CloudWatch), runtime security events (Falco) and model drift (Evidently AI, WhyLogs). The tooling lives in the **Ops VPC** and reaches every other VPC over the Transit Gateway.
@@ -1002,7 +1002,7 @@ Already in place today: **VPC Flow Logs** for all four VPCs and the **EKS contro
 🔵 **Target design**
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/mlops-loop.svg" width="100%" alt="The continuous training loop: train, register, serve, monitor, retrain"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/mlops-loop.svg" width="100%" alt="The continuous training loop: train, register, serve, monitor, retrain"/>
 </div>
 
 **📝 What this shows.** The life of the fraud model as a loop, not a one-off. Data is ingested, a model is trained and evaluated, and it is registered only if it passes a **quality gate**. KServe serves it to the Fraud service. Monitoring watches for **drift** (real-world data slowly stops looking like the training data), and drift triggers a new training run.
@@ -1016,7 +1016,7 @@ Already in place today: **VPC Flow Logs** for all four VPCs and the **EKS contro
 ## 12. Roadmap
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project/main/docs/diagrams/roadmap-v2.svg" width="100%" alt="Roadmap: done, in progress and planned, layer by layer"/>
+<img src="https://raw.githubusercontent.com/muntaha747/FinTech-Enterprise-Project-Infra-Terraform/main/docs/diagrams/roadmap-v2.svg" width="100%" alt="Roadmap: done, in progress and planned, layer by layer"/>
 </div>
 
 **📝 What this shows.** Where the project is today. Foundation and Network are complete. **Orchestration** and **Delivery** are in progress: the EKS cluster, the autoscaler and the infrastructure pipeline are built, and the platform add-ons and GitOps tools come next.
