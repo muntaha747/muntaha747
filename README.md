@@ -117,6 +117,18 @@ I'm a **Platform/DevOps Engineer with 6+ years of experience** designing, automa
 
 **[→ Explore the repo](https://github.com/muntaha747/Production-Grade-EKS-Microservices)**
 
+### [FinTech-Enterprise-Project](https://github.com/muntaha747/FinTech-Enterprise-Project)
+> An **AWS FinTech platform** built layer by layer with Terraform: four isolated VPCs joined by a Transit Gateway, Amazon EKS with blue/green node groups, Checkov-scanned infrastructure, and a GitHub Actions pipeline that deploys with OIDC, so no AWS keys are stored.
+
+**Highlights:**
+- ✅ **4 isolated VPCs** (Edge, App, Data, Ops) connected through a **Transit Gateway** hub-and-spoke design
+- ✅ **Amazon EKS** platform with blue/green node groups and autoscaling
+- ✅ **Checkov** security scanning, with the infrastructure passing with 0 failed checks
+- ✅ **GitHub Actions to AWS without keys** using OIDC, plus remote state with locking
+- ✅ Observability and MLOps layers planned on the same platform
+
+**[→ Explore the repo](https://github.com/muntaha747/FinTech-Enterprise-Project)**
+
 ---
 
 ## 💰 FinTech Enterprise Project: Now Live
