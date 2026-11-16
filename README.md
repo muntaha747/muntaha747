@@ -19,7 +19,7 @@
 I'm a **Platform/DevOps Engineer with 6+ years of experience** designing, automating, and operating highly available cloud infrastructure. I specialize in turning fragile, manual deployments into **secure, scalable, production-grade platforms** — from Kubernetes clusters to full IaC-driven AWS environments.
 
 - 🔭 Currently architecting **production-grade EKS microservice platforms**
-- 💰 **Upcoming:** Diving deep into **FinTech infrastructure** — secure, compliant, highly-available cloud platforms for financial workloads (PCI-DSS aligned networking, audit-ready pipelines, resilient multi-region architectures)
+- 💰 **Live now:** Building the **FinTech Enterprise Project** — secure, compliant, highly-available cloud platforms for financial workloads (PCI-DSS aligned networking, audit-ready pipelines, resilient multi-region architectures)
 - 🌱 Constantly leveling up on service mesh, GitOps (ArgoCD/Flux), and FinOps practices
 - 🤝 Open to collaborating on Kubernetes, Terraform, and AWS platform-engineering projects
 - ⚡ Fun fact: I'd rather automate it once than click it twice
@@ -76,15 +76,13 @@ I'm a **Platform/DevOps Engineer with 6+ years of experience** designing, automa
 
 ---
 
-## 💰 Upcoming: FinTech Infrastructure Projects
+## 💰 FinTech Enterprise Project: Now Live
 
-> 🚧 **Coming soon** — a series of projects applying production-grade DevOps practices to **FinTech-grade cloud infrastructure**:
-> - Highly available, multi-region AWS architectures for financial workloads
-> - Compliance-aware networking & encryption-by-default infrastructure (PCI-DSS aligned)
-> - Zero-downtime deployment pipelines with full audit trails
-> - EKS-based microservices platforms built for financial transaction processing
->
-> ⭐ Star/watch this profile to follow along as these go live!
+> 🟢 **In progress**: production-grade DevOps practices applied to **FinTech-grade cloud infrastructure**:
+> - Four isolated VPCs joined by a Transit Gateway, with Terraform-built infrastructure
+> - Amazon EKS with blue/green node groups and security scanning with Checkov
+> - GitHub Actions deployments that use OIDC, so no AWS keys are stored
+> - Full write-up below, and code in [FinTech-Enterprise-Project](https://github.com/muntaha747/FinTech-Enterprise-Project)
 
 ---
 
