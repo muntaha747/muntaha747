@@ -30,7 +30,7 @@ I'm a **Platform/DevOps Engineer with 6+ years of experience** designing, automa
 
 ### 🗺️ Regional Architecture: FinTech Platform
 
-<img src="https://raw.githubusercontent.com/muntaha747/muntaha747/master/docs/diagrams/architecture-cicd-v10.svg" width="100%" alt="Regional architecture with CI/CD: Edge, App, Data and Ops VPCs, plus the pipelines for Ledger, Notification, Payment, Fraud and BFF"/>
+<img src="https://raw.githubusercontent.com/muntaha747/muntaha747/master/docs/diagrams/architecture-cicd-v11.svg" width="100%" alt="Regional architecture with CI/CD: Edge, App, Data and Ops VPCs, plus the pipelines for Ledger, Notification, Payment, Fraud and BFF"/>
 
 </div>
 
@@ -303,7 +303,7 @@ Thinking in layers keeps responsibilities clear. A network engineer can change a
 🔵 **Target design** (the VPCs, Transit Gateway, NAT, endpoints and EKS are 🟢 built)
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/muntaha747/muntaha747/master/docs/diagrams/architecture-cicd-v10.svg" width="100%" alt="Regional architecture with CI/CD: Edge, App, Data and Ops VPCs, plus the pipelines for Ledger, Notification, Payment, Fraud and BFF"/>
+<img src="https://raw.githubusercontent.com/muntaha747/muntaha747/master/docs/diagrams/architecture-cicd-v11.svg" width="100%" alt="Regional architecture with CI/CD: Edge, App, Data and Ops VPCs, plus the pipelines for Ledger, Notification, Payment, Fraud and BFF"/>
 </div>
 
 **📝 What this shows.** One AWS region, four VPCs, one hub. Each VPC has one job:
