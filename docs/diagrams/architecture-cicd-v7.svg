@@ -1,0 +1,631 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1900" width="1600" height="1900" role="img" aria-label="Regional architecture with CI/CD for five microservices">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#02030a"/><stop offset=".5" stop-color="#05071a"/><stop offset="1" stop-color="#03070f"/>
+    </linearGradient>
+    <linearGradient id="gradTitle" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e11d48"/><stop offset=".2" stop-color="#f97316"/><stop offset=".4" stop-color="#ffb800"/><stop offset=".6" stop-color="#16a34a"/><stop offset=".8" stop-color="#1d6bff"/><stop offset="1" stop-color="#a21caf"/>
+    </linearGradient>
+    <linearGradient id="gradEdge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e11d48"/><stop offset=".17" stop-color="#f97316"/><stop offset=".33" stop-color="#ffb800"/><stop offset=".5" stop-color="#16a34a"/><stop offset=".67" stop-color="#0d9488"/><stop offset=".83" stop-color="#1d6bff"/><stop offset="1" stop-color="#a21caf"/>
+    </linearGradient>
+    <linearGradient id="g0d9488" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d9488"/><stop offset="1" stop-color="#0d9488" stop-opacity=".78"/></linearGradient><linearGradient id="g0ea5e9" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0ea5e9"/><stop offset="1" stop-color="#0ea5e9" stop-opacity=".78"/></linearGradient><linearGradient id="g16a34a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16a34a"/><stop offset="1" stop-color="#16a34a" stop-opacity=".78"/></linearGradient><linearGradient id="g1d6bff" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d6bff"/><stop offset="1" stop-color="#1d6bff" stop-opacity=".78"/></linearGradient><linearGradient id="g4338ca" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4338ca"/><stop offset="1" stop-color="#4338ca" stop-opacity=".78"/></linearGradient><linearGradient id="g84cc16" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#84cc16"/><stop offset="1" stop-color="#84cc16" stop-opacity=".78"/></linearGradient><linearGradient id="ga21caf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a21caf"/><stop offset="1" stop-color="#a21caf" stop-opacity=".78"/></linearGradient><linearGradient id="gdb2777" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#db2777"/><stop offset="1" stop-color="#db2777" stop-opacity=".78"/></linearGradient><linearGradient id="ge11d48" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e11d48"/><stop offset="1" stop-color="#e11d48" stop-opacity=".78"/></linearGradient><linearGradient id="gf97316" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f97316"/><stop offset="1" stop-color="#f97316" stop-opacity=".78"/></linearGradient><linearGradient id="gffb800" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb800"/><stop offset="1" stop-color="#ffb800" stop-opacity=".78"/></linearGradient>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur in="SourceAlpha" stdDeviation="5" result="b"/><feFlood flood-color="#38bdf8" flood-opacity=".45"/><feComposite in2="b" operator="in" result="halo"/><feMerge><feMergeNode in="halo"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="b"/>
+      <feFlood flood-color="#22d3ee" flood-opacity=".8"/>
+      <feComposite in2="b" operator="in" result="halo"/>
+      <feMerge><feMergeNode in="halo"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .title { font: 900 36px 'Segoe UI', Arial, sans-serif; fill: url(#gradTitle); }
+      .sub { font: 700 16px 'Segoe UI', Arial, sans-serif; fill: #c7d2fe; }
+      .st { font: 900 20px 'Segoe UI', Arial, sans-serif; }
+      .vh { font: 900 17px 'Segoe UI', Arial, sans-serif; fill: #0b1020; }
+      .vc { font: 800 13px 'Segoe UI', Arial, sans-serif; fill: #0b1020; }
+      .ct { font: 800 14px 'Segoe UI', Arial, sans-serif; fill: #0b1020; }
+      .cs { font: 700 12px 'Segoe UI', Arial, sans-serif; fill: #0b1020; }
+      .t { font: 700 12px 'Segoe UI', Arial, sans-serif; fill: #e2e8f0; }
+      .lbl { font: 900 12px 'Segoe UI', Arial, sans-serif; }
+      .lbl2 { font: 800 11px 'Segoe UI', Arial, sans-serif; fill: #0b1020; }
+      .foot { font: 800 15px 'Segoe UI', Arial, sans-serif; fill: #c7d2fe; }
+      .flow { fill: none; stroke-width: 3.6; filter: drop-shadow(0 0 4px currentColor); stroke-linecap: round; stroke-dasharray: 10 8; animation: flow .7s linear infinite; }
+      .card { }
+      
+      
+      .dashmove { }
+      @keyframes flow { to { stroke-dashoffset: -36; } }
+      @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.015); } }
+      @keyframes sweep { 0%,100% { opacity: 0; } 12% { opacity: .7; } 30% { opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) { .flow, .card, .hl, .dashmove { animation: none; } }
+    </style>
+    <marker id="arr" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L12,6 L0,12 z" fill="#22d3ee"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="1900" fill="url(#bg)"/>
+  <text x="800.0" y="48" text-anchor="middle" class="title">FinTech Enterprise · Regional Architecture + CI/CD</text>
+<text x="800.0" y="76" text-anchor="middle" class="sub">AWS us-east-1 · 4 VPCs on one Transit Gateway · five microservices · every pipeline animated</text>
+<rect x="28" y="92" width="1544" height="1000" rx="30" fill="#0b1226" fill-opacity=".75" stroke="url(#gradEdge)" stroke-width="5" stroke-dasharray="14 8" class="dashmove"/>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="40" y="100" width="330" height="40" rx="14" fill="url(#gdb2777)" stroke="#f472b6" stroke-width="2.5"/></g>
+<text x="205.0" y="125.0" class="ct" text-anchor="middle">Customers · web &amp; mobile</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="560" y="100" width="480" height="40" rx="14" fill="url(#gffb800)" stroke="#fde047" stroke-width="2.5"/></g>
+<text x="800.0" y="125.0" class="ct" text-anchor="middle">Transit Gateway · 10.0.0.0/8 hub</text>
+<rect x="40" y="150" width="330" height="810" rx="20" fill="#0f1a33" fill-opacity=".92" stroke="#60a5fa" stroke-width="3.5" filter="url(#glow2)"/>
+<rect x="40" y="150" width="330" height="50" rx="20" fill="url(#g1d6bff)"/>
+<rect x="40" y="178" width="330" height="22" fill="url(#g1d6bff)"/>
+<text x="56" y="183" class="vh" text-anchor="start" fill="#0b1020">VPC A · EDGE</text>
+<text x="354" y="183" class="vc" text-anchor="end" fill="#0b1020">10.10.0.0/16</text>
+<rect x="400" y="150" width="560" height="810" rx="20" fill="#0f1a33" fill-opacity=".92" stroke="#4ade80" stroke-width="3.5" filter="url(#glow2)"/>
+<rect x="400" y="150" width="560" height="50" rx="20" fill="url(#g16a34a)"/>
+<rect x="400" y="178" width="560" height="22" fill="url(#g16a34a)"/>
+<text x="416" y="183" class="vh" text-anchor="start" fill="#0b1020">VPC B · APP (EKS)</text>
+<text x="944" y="183" class="vc" text-anchor="end" fill="#0b1020">10.20.0.0/16</text>
+<rect x="990" y="150" width="300" height="810" rx="20" fill="#0f1a33" fill-opacity=".92" stroke="#fb7185" stroke-width="3.5" filter="url(#glow2)"/>
+<rect x="990" y="150" width="300" height="50" rx="20" fill="url(#ge11d48)"/>
+<rect x="990" y="178" width="300" height="22" fill="url(#ge11d48)"/>
+<text x="1006" y="183" class="vh" text-anchor="start" fill="#0b1020">VPC C · DATA</text>
+<text x="1274" y="183" class="vc" text-anchor="end" fill="#0b1020">10.30.0.0/16</text>
+<rect x="1320" y="150" width="250" height="810" rx="20" fill="#0f1a33" fill-opacity=".92" stroke="#e879f9" stroke-width="3.5" filter="url(#glow2)"/>
+<rect x="1320" y="150" width="250" height="50" rx="20" fill="url(#ga21caf)"/>
+<rect x="1320" y="178" width="250" height="22" fill="url(#ga21caf)"/>
+<text x="1336" y="183" class="vh" text-anchor="start" fill="#0b1020">VPC D · OPS</text>
+<text x="1554" y="183" class="vc" text-anchor="end" fill="#0b1020">10.40.0.0/16</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="60" y="200" width="290" height="56" rx="14" fill="url(#g1d6bff)" stroke="#60a5fa" stroke-width="2.5"/></g>
+<text x="205.0" y="226.0" class="ct" text-anchor="middle">Route 53</text>
+<text x="205.0" y="243.0" class="cs" text-anchor="middle">DNS</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="60" y="276" width="290" height="56" rx="14" fill="url(#g4338ca)" stroke="#a5b4fc" stroke-width="2.5"/></g>
+<text x="205.0" y="302.0" class="ct" text-anchor="middle">CloudFront</text>
+<text x="205.0" y="319.0" class="cs" text-anchor="middle">CDN · TLS</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="60" y="352" width="290" height="56" rx="14" fill="url(#ge11d48)" stroke="#fb7185" stroke-width="2.5"/></g>
+<text x="205.0" y="378.0" class="ct" text-anchor="middle">WAF + Shield Advanced</text>
+<text x="205.0" y="395.0" class="cs" text-anchor="middle">OWASP rules · DDoS</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="60" y="428" width="290" height="56" rx="14" fill="url(#gf97316)" stroke="#fdba74" stroke-width="2.5"/></g>
+<text x="205.0" y="454.0" class="ct" text-anchor="middle">API Gateway</text>
+<text x="205.0" y="471.0" class="cs" text-anchor="middle">REST · VPC Link</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="60" y="880" width="290" height="40" rx="14" fill="url(#g4338ca)" stroke="#a5b4fc" stroke-width="2.5"/></g>
+<text x="205.0" y="898.0" class="ct" text-anchor="middle">VPC Endpoint</text>
+<text x="205.0" y="915.0" class="cs" text-anchor="middle">private AWS access</text>
+<rect x="420" y="200" width="520" height="460" rx="18" fill="#0b1226" fill-opacity=".8" stroke="#2dd4bf" stroke-width="3" stroke-dasharray="10 6"/>
+<text x="434" y="222" class="t" text-anchor="start" fill="#5eead4">Amazon EKS cluster · Istio + Calico + KEDA + Karpenter</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="440" y="240" width="230" height="58" rx="14" fill="url(#g1d6bff)" stroke="#60a5fa" stroke-width="2.5"/></g>
+<text x="555.0" y="267.0" class="ct" text-anchor="middle">BFF Service</text>
+<text x="555.0" y="284.0" class="cs" text-anchor="middle">Node.js · aggregates API</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="690" y="240" width="230" height="58" rx="14" fill="url(#ge11d48)" stroke="#fb7185" stroke-width="2.5"/></g>
+<text x="805.0" y="267.0" class="ct" text-anchor="middle">Payment Service</text>
+<text x="805.0" y="284.0" class="cs" text-anchor="middle">Go · orchestration</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="440" y="318" width="230" height="58" rx="14" fill="url(#gffb800)" stroke="#fde047" stroke-width="2.5"/></g>
+<text x="555.0" y="345.0" class="ct" text-anchor="middle">Ledger Service</text>
+<text x="555.0" y="362.0" class="cs" text-anchor="middle">Java · double-entry</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="690" y="318" width="230" height="58" rx="14" fill="url(#ga21caf)" stroke="#e879f9" stroke-width="2.5"/></g>
+<text x="805.0" y="345.0" class="ct" text-anchor="middle">Fraud Service</text>
+<text x="805.0" y="362.0" class="cs" text-anchor="middle">Python · fraud scoring</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="440" y="396" width="230" height="58" rx="14" fill="url(#g0d9488)" stroke="#2dd4bf" stroke-width="2.5"/></g>
+<text x="555.0" y="423.0" class="ct" text-anchor="middle">Notification Service</text>
+<text x="555.0" y="440.0" class="cs" text-anchor="middle">Node.js · email / SMS / push</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="690" y="396" width="230" height="58" rx="14" fill="url(#gf97316)" stroke="#fdba74" stroke-width="2.5"/></g>
+<text x="805.0" y="423.0" class="ct" text-anchor="middle">KServe</text>
+<text x="805.0" y="440.0" class="cs" text-anchor="middle">model serving</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="690" y="474" width="230" height="58" rx="14" fill="url(#gdb2777)" stroke="#f472b6" stroke-width="2.5"/></g>
+<text x="805.0" y="501.0" class="ct" text-anchor="middle">Airflow + Kubeflow</text>
+<text x="805.0" y="518.0" class="cs" text-anchor="middle">ML pipelines</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="440" y="552" width="480" height="56" rx="14" fill="url(#g4338ca)" stroke="#a5b4fc" stroke-width="2.5"/></g>
+<text x="680.0" y="578.0" class="ct" text-anchor="middle">Istio · Calico · KEDA · Karpenter</text>
+<text x="680.0" y="595.0" class="cs" text-anchor="middle">mesh · network policy · scaling</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="420" y="690" width="240" height="60" rx="14" fill="url(#g0d9488)" stroke="#2dd4bf" stroke-width="2.5"/></g>
+<text x="540.0" y="718.0" class="ct" text-anchor="middle">ALB</text>
+<text x="540.0" y="735.0" class="cs" text-anchor="middle">ingress to EKS</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="690" y="690" width="250" height="60" rx="14" fill="url(#ge11d48)" stroke="#fb7185" stroke-width="2.5"/></g>
+<text x="815.0" y="718.0" class="ct" text-anchor="middle">NAT Gateway</text>
+<text x="815.0" y="735.0" class="cs" text-anchor="middle">controlled egress</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="420" y="880" width="240" height="40" rx="14" fill="url(#g4338ca)" stroke="#a5b4fc" stroke-width="2.5"/></g>
+<text x="540.0" y="898.0" class="ct" text-anchor="middle">VPC Endpoint</text>
+<text x="540.0" y="915.0" class="cs" text-anchor="middle">ECR · S3 · KMS</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="1010" y="200" width="260" height="56" rx="14" fill="url(#ge11d48)" stroke="#fb7185" stroke-width="2.5"/></g>
+<text x="1140.0" y="226.0" class="ct" text-anchor="middle">MySQL</text>
+<text x="1140.0" y="243.0" class="cs" text-anchor="middle">transactional DB</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="1010" y="276" width="260" height="56" rx="14" fill="url(#gf97316)" stroke="#fdba74" stroke-width="2.5"/></g>
+<text x="1140.0" y="302.0" class="ct" text-anchor="middle">Valkey</text>
+<text x="1140.0" y="319.0" class="cs" text-anchor="middle">cache · sessions</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="1010" y="352" width="260" height="56" rx="14" fill="url(#gdb2777)" stroke="#f472b6" stroke-width="2.5"/></g>
+<text x="1140.0" y="378.0" class="ct" text-anchor="middle">Kafka</text>
+<text x="1140.0" y="395.0" class="cs" text-anchor="middle">event-driven (EDA)</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="1010" y="428" width="260" height="56" rx="14" fill="url(#g16a34a)" stroke="#4ade80" stroke-width="2.5"/></g>
+<text x="1140.0" y="454.0" class="ct" text-anchor="middle">MongoDB</text>
+<text x="1140.0" y="471.0" class="cs" text-anchor="middle">documents · KYC</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="1010" y="504" width="260" height="56" rx="14" fill="url(#g0ea5e9)" stroke="#38bdf8" stroke-width="2.5"/></g>
+<text x="1140.0" y="530.0" class="ct" text-anchor="middle">OpenSearch</text>
+<text x="1140.0" y="547.0" class="cs" text-anchor="middle">search · logs · vectors</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="1010" y="880" width="260" height="40" rx="14" fill="url(#g4338ca)" stroke="#a5b4fc" stroke-width="2.5"/></g>
+<text x="1140.0" y="898.0" class="ct" text-anchor="middle">VPC Endpoint</text>
+<text x="1140.0" y="915.0" class="cs" text-anchor="middle">private access</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="1335" y="200" width="220" height="56" rx="14" fill="url(#gf97316)" stroke="#fdba74" stroke-width="2.5"/></g>
+<text x="1445.0" y="226.0" class="ct" text-anchor="middle">Prometheus</text>
+<text x="1445.0" y="243.0" class="cs" text-anchor="middle">metrics</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="1335" y="276" width="220" height="56" rx="14" fill="url(#gffb800)" stroke="#fde047" stroke-width="2.5"/></g>
+<text x="1445.0" y="302.0" class="ct" text-anchor="middle">Grafana</text>
+<text x="1445.0" y="319.0" class="cs" text-anchor="middle">dashboards</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="1335" y="352" width="220" height="56" rx="14" fill="url(#ga21caf)" stroke="#e879f9" stroke-width="2.5"/></g>
+<text x="1445.0" y="378.0" class="ct" text-anchor="middle">Argo CD</text>
+<text x="1445.0" y="395.0" class="cs" text-anchor="middle">GitOps sync</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="1335" y="428" width="220" height="56" rx="14" fill="url(#g4338ca)" stroke="#a5b4fc" stroke-width="2.5"/></g>
+<text x="1445.0" y="454.0" class="ct" text-anchor="middle">HashiCorp Vault</text>
+<text x="1445.0" y="471.0" class="cs" text-anchor="middle">secrets</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="1335" y="504" width="220" height="56" rx="14" fill="url(#g1d6bff)" stroke="#60a5fa" stroke-width="2.5"/></g>
+<text x="1445.0" y="530.0" class="ct" text-anchor="middle">MLflow</text>
+<text x="1445.0" y="547.0" class="cs" text-anchor="middle">experiments · registry</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="1335" y="880" width="220" height="40" rx="14" fill="url(#ge11d48)" stroke="#fb7185" stroke-width="2.5"/></g>
+<text x="1445.0" y="898.0" class="ct" text-anchor="middle">NAT</text>
+<text x="1445.0" y="915.0" class="cs" text-anchor="middle">egress</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="420" y="1010" width="240" height="62" rx="14" fill="url(#gffb800)" stroke="#fde047" stroke-width="2.5"/></g>
+<text x="540.0" y="1039.0" class="ct" text-anchor="middle">Amazon ECR</text>
+<text x="540.0" y="1056.0" class="cs" text-anchor="middle">container images</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="700" y="1010" width="240" height="62" rx="14" fill="url(#g16a34a)" stroke="#4ade80" stroke-width="2.5"/></g>
+<text x="820.0" y="1039.0" class="ct" text-anchor="middle">Amazon S3</text>
+<text x="820.0" y="1056.0" class="cs" text-anchor="middle">artifacts · data</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="980" y="1010" width="240" height="62" rx="14" fill="url(#ge11d48)" stroke="#fb7185" stroke-width="2.5"/></g>
+<text x="1100.0" y="1039.0" class="ct" text-anchor="middle">AWS KMS</text>
+<text x="1100.0" y="1056.0" class="cs" text-anchor="middle">encryption keys</text>
+<g class="card" filter="url(#glow)" style="animation-delay:0.00s"><rect x="1260" y="1010" width="290" height="62" rx="14" fill="url(#gdb2777)" stroke="#f472b6" stroke-width="2.5"/></g>
+<text x="1405.0" y="1039.0" class="ct" text-anchor="middle">Internet</text>
+<text x="1405.0" y="1056.0" class="cs" text-anchor="middle">payment networks · alerts</text>
+<path id="p0" class="flow" d="M210,136 L210,200" stroke="#60a5fa" marker-end="url(#arr)"/>
+<path id="p1" class="flow" d="M210,256 L210,276" stroke="#a5b4fc" marker-end="url(#arr)"/>
+<path id="p2" class="flow" d="M210,332 L210,352" stroke="#fb7185" marker-end="url(#arr)"/>
+<path id="p3" class="flow" d="M210,408 L210,428" stroke="#fdba74" marker-end="url(#arr)"/>
+<path id="p4" class="flow" d="M350,456 L395,456 L395,720 L420,720" stroke="#2dd4bf" marker-end="url(#arr)"/>
+<rect x="346.2" y="567" width="73.60000000000001" height="20" rx="10" fill="#0b1226" stroke="#2dd4bf" stroke-width="2"/>
+<text x="383" y="580" class="lbl" text-anchor="middle" fill="#2dd4bf">request</text>
+<path id="p5" class="flow" d="M540,690 L540,660" stroke="#2dd4bf" marker-end="url(#arr)"/>
+<rect x="563.2" y="663" width="73.60000000000001" height="20" rx="10" fill="#0b1226" stroke="#2dd4bf" stroke-width="2"/>
+<text x="600" y="676" class="lbl" text-anchor="middle" fill="#2dd4bf">to pods</text>
+<path id="p6" class="flow" d="M640,270 L690,270" stroke="#60a5fa" marker-end="url(#arr)"/>
+<path id="p7" class="flow" d="M805,298 L805,318" stroke="#fb7185" marker-end="url(#arr)"/>
+<path id="p8" class="flow" d="M555,298 L555,318" stroke="#60a5fa" marker-end="url(#arr)"/>
+<path id="p9" class="flow" d="M670,330 L1010,230" stroke="#f472b6" marker-end="url(#arr)"/>
+<rect x="925.2" y="223" width="73.60000000000001" height="20" rx="10" fill="#0b1226" stroke="#f472b6" stroke-width="2"/>
+<text x="962" y="236" class="lbl" text-anchor="middle" fill="#f472b6">queries</text>
+<path id="p10" class="flow" d="M920,370 L1010,380" stroke="#fb7185" marker-end="url(#arr)"/>
+<rect x="932.6" y="357" width="64.80000000000001" height="20" rx="10" fill="#0b1226" stroke="#fb7185" stroke-width="2"/>
+<text x="965" y="370" class="lbl" text-anchor="middle" fill="#fb7185">events</text>
+<path id="p11" class="flow" d="M920,430 L1010,450" stroke="#fdba74" marker-end="url(#arr)"/>
+<path id="p12" class="flow" d="M540,920 L540,1010" stroke="#fde047" marker-end="url(#arr)"/>
+<rect x="545.6" y="953" width="108.80000000000001" height="20" rx="10" fill="#0b1226" stroke="#fde047" stroke-width="2"/>
+<text x="600" y="966" class="lbl" text-anchor="middle" fill="#fde047">pull images</text>
+<path id="p13" class="flow" d="M1210,360 L1335,360" stroke="#e879f9" marker-end="url(#arr)"/>
+<rect x="1239.6" y="337" width="64.80000000000001" height="20" rx="10" fill="#0b1226" stroke="#e879f9" stroke-width="2"/>
+<text x="1272" y="350" class="lbl" text-anchor="middle" fill="#e879f9">GitOps</text>
+<path id="p14" class="flow" d="M680,136 L680,150" stroke="#fde047" marker-end="url(#arr)"/>
+<path id="p15" class="flow" d="M560,136 L560,150" stroke="#fde047" marker-end="url(#arr)"/>
+<path id="p16" class="flow" d="M1130,136 L1130,150" stroke="#fde047" marker-end="url(#arr)"/>
+<path id="p17" class="flow" d="M1445,136 L1445,150" stroke="#fde047" marker-end="url(#arr)"/>
+<rect x="28" y="1110" width="1544" height="790" rx="30" fill="#0b1226" fill-opacity=".85" stroke="url(#gradEdge)" stroke-width="5" stroke-dasharray="14 8" class="dashmove"/>
+<text x="50" y="1142" class="st" text-anchor="start" fill="#67e8f9">CI/CD · Build, secure, push and deploy for all five microservices</text>
+<text x="50" y="1164" class="t" text-anchor="start" fill="#e2e8f0">Ledger = live pipeline today · Notification, Payment, Fraud, BFF = planned pipelines for future repos (same template)</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:0.00s"><rect x="50" y="1172" width="190" height="72" rx="14" fill="url(#g4338ca)" stroke="#a5b4fc" stroke-width="2.5"/></g>
+<text x="145.0" y="1206.0" class="ct" text-anchor="middle">Push to feature</text>
+<text x="145.0" y="1223.0" class="cs" text-anchor="middle">git push · PR · merge</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:0.42s"><rect x="268" y="1172" width="190" height="72" rx="14" fill="url(#g1d6bff)" stroke="#60a5fa" stroke-width="2.5"/></g>
+<text x="363.0" y="1206.0" class="ct" text-anchor="middle">CI build + test</text>
+<text x="363.0" y="1223.0" class="cs" text-anchor="middle">Gitleaks · Maven · JaCoCo</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:0.84s"><rect x="486" y="1172" width="190" height="72" rx="14" fill="url(#gf97316)" stroke="#fdba74" stroke-width="2.5"/></g>
+<text x="581.0" y="1206.0" class="ct" text-anchor="middle">Security scans</text>
+<text x="581.0" y="1223.0" class="cs" text-anchor="middle">Trivy SCA · SonarCloud</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:1.26s"><rect x="704" y="1172" width="190" height="72" rx="14" fill="url(#g0d9488)" stroke="#2dd4bf" stroke-width="2.5"/></g>
+<text x="799.0" y="1206.0" class="ct" text-anchor="middle">Image + scan</text>
+<text x="799.0" y="1223.0" class="cs" text-anchor="middle">Buildx · Trivy image</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:1.68s"><rect x="922" y="1172" width="190" height="72" rx="14" fill="url(#gffb800)" stroke="#fde047" stroke-width="2.5"/></g>
+<text x="1017.0" y="1206.0" class="ct" text-anchor="middle">ECR push</text>
+<text x="1017.0" y="1223.0" class="cs" text-anchor="middle">scan-on-push report</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:2.10s"><rect x="1140" y="1172" width="190" height="72" rx="14" fill="url(#gdb2777)" stroke="#f472b6" stroke-width="2.5"/></g>
+<text x="1235.0" y="1206.0" class="ct" text-anchor="middle">CD dispatch</text>
+<text x="1235.0" y="1223.0" class="cs" text-anchor="middle">GitHub API + PAT</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:2.52s"><rect x="1358" y="1172" width="190" height="72" rx="14" fill="url(#ga21caf)" stroke="#e879f9" stroke-width="2.5"/></g>
+<text x="1453.0" y="1206.0" class="ct" text-anchor="middle">Argo CD sync</text>
+<text x="1453.0" y="1223.0" class="cs" text-anchor="middle">GitOps · EKS envs</text>
+<path id="p18" class="flow" d="M240,1208 L268,1208" stroke="#a5b4fc" marker-end="url(#arr)"/>
+<path id="p19" class="flow" d="M458,1208 L486,1208" stroke="#60a5fa" marker-end="url(#arr)"/>
+<path id="p20" class="flow" d="M676,1208 L704,1208" stroke="#fdba74" marker-end="url(#arr)"/>
+<path id="p21" class="flow" d="M894,1208 L922,1208" stroke="#2dd4bf" marker-end="url(#arr)"/>
+<path id="p22" class="flow" d="M1112,1208 L1140,1208" stroke="#fde047" marker-end="url(#arr)"/>
+<path id="p23" class="flow" d="M1330,1208 L1358,1208" stroke="#f472b6" marker-end="url(#arr)"/>
+<text x="50" y="1268" class="t" text-anchor="start" fill="#e2e8f0">Template every service follows (the pattern shown per lane below)</text>
+<g class="card" filter="url(#glow)"><rect x="50" y="1290" width="200" height="84" rx="14" fill="url(#g16a34a)" stroke="#4ade80" stroke-width="2.5"/></g>
+<text x="150" y="1320" class="ct" text-anchor="middle">Ledger Service</text>
+<text x="150" y="1340" class="cs" text-anchor="middle">Java · Spring Boot</text>
+<text x="150" y="1360" class="lbl2" text-anchor="middle">LIVE · 20-step workflow</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:0.00s"><rect x="270" y="1304" width="160" height="56" rx="14" fill="url(#g16a34a)" stroke="#4ade80" stroke-width="2.5"/></g>
+<text x="350.0" y="1330.0" class="ct" text-anchor="middle">Push</text>
+<text x="350.0" y="1347.0" class="cs" text-anchor="middle">feature · PR · main</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:0.42s"><rect x="448" y="1304" width="160" height="56" rx="14" fill="url(#g16a34a)" stroke="#4ade80" stroke-width="2.5"/></g>
+<text x="528.0" y="1330.0" class="ct" text-anchor="middle">Build + test</text>
+<text x="528.0" y="1347.0" class="cs" text-anchor="middle">mvn verify · JUnit</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:0.84s"><rect x="626" y="1304" width="160" height="56" rx="14" fill="url(#g16a34a)" stroke="#4ade80" stroke-width="2.5"/></g>
+<text x="706.0" y="1330.0" class="ct" text-anchor="middle">SCA + SAST</text>
+<text x="706.0" y="1347.0" class="cs" text-anchor="middle">Trivy · SonarCloud</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:1.26s"><rect x="804" y="1304" width="160" height="56" rx="14" fill="url(#g16a34a)" stroke="#4ade80" stroke-width="2.5"/></g>
+<text x="884.0" y="1330.0" class="ct" text-anchor="middle">Image + scan</text>
+<text x="884.0" y="1347.0" class="cs" text-anchor="middle">Docker · Trivy image</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:1.68s"><rect x="982" y="1304" width="160" height="56" rx="14" fill="url(#g16a34a)" stroke="#4ade80" stroke-width="2.5"/></g>
+<text x="1062.0" y="1330.0" class="ct" text-anchor="middle">ECR push</text>
+<text x="1062.0" y="1347.0" class="cs" text-anchor="middle">scan-on-push</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:2.10s"><rect x="1160" y="1304" width="160" height="56" rx="14" fill="url(#g16a34a)" stroke="#4ade80" stroke-width="2.5"/></g>
+<text x="1240.0" y="1330.0" class="ct" text-anchor="middle">CD dispatch</text>
+<text x="1240.0" y="1347.0" class="cs" text-anchor="middle">deploy.yml per env</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:2.52s"><rect x="1338" y="1304" width="160" height="56" rx="14" fill="url(#g16a34a)" stroke="#4ade80" stroke-width="2.5"/></g>
+<text x="1418.0" y="1330.0" class="ct" text-anchor="middle">Argo CD</text>
+<text x="1418.0" y="1347.0" class="cs" text-anchor="middle">sync to EKS</text>
+<path id="p24" class="flow" d="M430,1332 L448,1332" stroke="#4ade80" marker-end="url(#arr)"/>
+<path id="p25" class="flow" d="M608,1332 L626,1332" stroke="#4ade80" marker-end="url(#arr)"/>
+<path id="p26" class="flow" d="M786,1332 L804,1332" stroke="#4ade80" marker-end="url(#arr)"/>
+<path id="p27" class="flow" d="M964,1332 L982,1332" stroke="#4ade80" marker-end="url(#arr)"/>
+<path id="p28" class="flow" d="M1142,1332 L1160,1332" stroke="#4ade80" marker-end="url(#arr)"/>
+<path id="p29" class="flow" d="M1320,1332 L1338,1332" stroke="#4ade80" marker-end="url(#arr)"/>
+<path id="p30" class="flow" d="M250,1332 L270,1332" stroke="#4ade80" marker-end="url(#arr)"/>
+<g class="card" filter="url(#glow)"><rect x="50" y="1390" width="200" height="84" rx="14" fill="url(#g0d9488)" stroke="#2dd4bf" stroke-width="2.5"/></g>
+<text x="150" y="1420" class="ct" text-anchor="middle">Notification Service</text>
+<text x="150" y="1440" class="cs" text-anchor="middle">Node.js</text>
+<text x="150" y="1460" class="lbl2" text-anchor="middle">planned · workflow to add</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:0.15s"><rect x="270" y="1404" width="160" height="56" rx="14" fill="url(#g0d9488)" stroke="#2dd4bf" stroke-width="2.5"/></g>
+<text x="350.0" y="1430.0" class="ct" text-anchor="middle">Push</text>
+<text x="350.0" y="1447.0" class="cs" text-anchor="middle">feature · PR · main</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:0.57s"><rect x="448" y="1404" width="160" height="56" rx="14" fill="url(#g0d9488)" stroke="#2dd4bf" stroke-width="2.5"/></g>
+<text x="528.0" y="1430.0" class="ct" text-anchor="middle">Build + test</text>
+<text x="528.0" y="1447.0" class="cs" text-anchor="middle">mvn verify · JUnit</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:0.99s"><rect x="626" y="1404" width="160" height="56" rx="14" fill="url(#g0d9488)" stroke="#2dd4bf" stroke-width="2.5"/></g>
+<text x="706.0" y="1430.0" class="ct" text-anchor="middle">SCA + SAST</text>
+<text x="706.0" y="1447.0" class="cs" text-anchor="middle">Trivy · SonarCloud</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:1.41s"><rect x="804" y="1404" width="160" height="56" rx="14" fill="url(#g0d9488)" stroke="#2dd4bf" stroke-width="2.5"/></g>
+<text x="884.0" y="1430.0" class="ct" text-anchor="middle">Image + scan</text>
+<text x="884.0" y="1447.0" class="cs" text-anchor="middle">Docker · Trivy image</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:1.83s"><rect x="982" y="1404" width="160" height="56" rx="14" fill="url(#g0d9488)" stroke="#2dd4bf" stroke-width="2.5"/></g>
+<text x="1062.0" y="1430.0" class="ct" text-anchor="middle">ECR push</text>
+<text x="1062.0" y="1447.0" class="cs" text-anchor="middle">scan-on-push</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:2.25s"><rect x="1160" y="1404" width="160" height="56" rx="14" fill="url(#g0d9488)" stroke="#2dd4bf" stroke-width="2.5"/></g>
+<text x="1240.0" y="1430.0" class="ct" text-anchor="middle">CD dispatch</text>
+<text x="1240.0" y="1447.0" class="cs" text-anchor="middle">deploy.yml per env</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:2.67s"><rect x="1338" y="1404" width="160" height="56" rx="14" fill="url(#g0d9488)" stroke="#2dd4bf" stroke-width="2.5"/></g>
+<text x="1418.0" y="1430.0" class="ct" text-anchor="middle">Argo CD</text>
+<text x="1418.0" y="1447.0" class="cs" text-anchor="middle">sync to EKS</text>
+<path id="p31" class="flow" d="M430,1432 L448,1432" stroke="#2dd4bf" marker-end="url(#arr)"/>
+<path id="p32" class="flow" d="M608,1432 L626,1432" stroke="#2dd4bf" marker-end="url(#arr)"/>
+<path id="p33" class="flow" d="M786,1432 L804,1432" stroke="#2dd4bf" marker-end="url(#arr)"/>
+<path id="p34" class="flow" d="M964,1432 L982,1432" stroke="#2dd4bf" marker-end="url(#arr)"/>
+<path id="p35" class="flow" d="M1142,1432 L1160,1432" stroke="#2dd4bf" marker-end="url(#arr)"/>
+<path id="p36" class="flow" d="M1320,1432 L1338,1432" stroke="#2dd4bf" marker-end="url(#arr)"/>
+<path id="p37" class="flow" d="M250,1432 L270,1432" stroke="#2dd4bf" marker-end="url(#arr)"/>
+<g class="card" filter="url(#glow)"><rect x="50" y="1490" width="200" height="84" rx="14" fill="url(#ge11d48)" stroke="#fb7185" stroke-width="2.5"/></g>
+<text x="150" y="1520" class="ct" text-anchor="middle">Payment Service</text>
+<text x="150" y="1540" class="cs" text-anchor="middle">Go</text>
+<text x="150" y="1560" class="lbl2" text-anchor="middle">planned · repo to be created</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:0.30s"><rect x="270" y="1504" width="160" height="56" rx="14" fill="url(#ge11d48)" stroke="#fb7185" stroke-width="2.5"/></g>
+<text x="350.0" y="1530.0" class="ct" text-anchor="middle">Push</text>
+<text x="350.0" y="1547.0" class="cs" text-anchor="middle">feature · PR · main</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:0.72s"><rect x="448" y="1504" width="160" height="56" rx="14" fill="url(#ge11d48)" stroke="#fb7185" stroke-width="2.5"/></g>
+<text x="528.0" y="1530.0" class="ct" text-anchor="middle">Build + test</text>
+<text x="528.0" y="1547.0" class="cs" text-anchor="middle">mvn verify · JUnit</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:1.14s"><rect x="626" y="1504" width="160" height="56" rx="14" fill="url(#ge11d48)" stroke="#fb7185" stroke-width="2.5"/></g>
+<text x="706.0" y="1530.0" class="ct" text-anchor="middle">SCA + SAST</text>
+<text x="706.0" y="1547.0" class="cs" text-anchor="middle">Trivy · SonarCloud</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:1.56s"><rect x="804" y="1504" width="160" height="56" rx="14" fill="url(#ge11d48)" stroke="#fb7185" stroke-width="2.5"/></g>
+<text x="884.0" y="1530.0" class="ct" text-anchor="middle">Image + scan</text>
+<text x="884.0" y="1547.0" class="cs" text-anchor="middle">Docker · Trivy image</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:1.98s"><rect x="982" y="1504" width="160" height="56" rx="14" fill="url(#ge11d48)" stroke="#fb7185" stroke-width="2.5"/></g>
+<text x="1062.0" y="1530.0" class="ct" text-anchor="middle">ECR push</text>
+<text x="1062.0" y="1547.0" class="cs" text-anchor="middle">scan-on-push</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:2.40s"><rect x="1160" y="1504" width="160" height="56" rx="14" fill="url(#ge11d48)" stroke="#fb7185" stroke-width="2.5"/></g>
+<text x="1240.0" y="1530.0" class="ct" text-anchor="middle">CD dispatch</text>
+<text x="1240.0" y="1547.0" class="cs" text-anchor="middle">deploy.yml per env</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:2.82s"><rect x="1338" y="1504" width="160" height="56" rx="14" fill="url(#ge11d48)" stroke="#fb7185" stroke-width="2.5"/></g>
+<text x="1418.0" y="1530.0" class="ct" text-anchor="middle">Argo CD</text>
+<text x="1418.0" y="1547.0" class="cs" text-anchor="middle">sync to EKS</text>
+<path id="p38" class="flow" d="M430,1532 L448,1532" stroke="#fb7185" marker-end="url(#arr)"/>
+<path id="p39" class="flow" d="M608,1532 L626,1532" stroke="#fb7185" marker-end="url(#arr)"/>
+<path id="p40" class="flow" d="M786,1532 L804,1532" stroke="#fb7185" marker-end="url(#arr)"/>
+<path id="p41" class="flow" d="M964,1532 L982,1532" stroke="#fb7185" marker-end="url(#arr)"/>
+<path id="p42" class="flow" d="M1142,1532 L1160,1532" stroke="#fb7185" marker-end="url(#arr)"/>
+<path id="p43" class="flow" d="M1320,1532 L1338,1532" stroke="#fb7185" marker-end="url(#arr)"/>
+<path id="p44" class="flow" d="M250,1532 L270,1532" stroke="#fb7185" marker-end="url(#arr)"/>
+<g class="card" filter="url(#glow)"><rect x="50" y="1590" width="200" height="84" rx="14" fill="url(#ga21caf)" stroke="#e879f9" stroke-width="2.5"/></g>
+<text x="150" y="1620" class="ct" text-anchor="middle">Fraud Service</text>
+<text x="150" y="1640" class="cs" text-anchor="middle">Python</text>
+<text x="150" y="1660" class="lbl2" text-anchor="middle">planned · repo to be created</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:0.45s"><rect x="270" y="1604" width="160" height="56" rx="14" fill="url(#ga21caf)" stroke="#e879f9" stroke-width="2.5"/></g>
+<text x="350.0" y="1630.0" class="ct" text-anchor="middle">Push</text>
+<text x="350.0" y="1647.0" class="cs" text-anchor="middle">feature · PR · main</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:0.87s"><rect x="448" y="1604" width="160" height="56" rx="14" fill="url(#ga21caf)" stroke="#e879f9" stroke-width="2.5"/></g>
+<text x="528.0" y="1630.0" class="ct" text-anchor="middle">Build + test</text>
+<text x="528.0" y="1647.0" class="cs" text-anchor="middle">mvn verify · JUnit</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:1.29s"><rect x="626" y="1604" width="160" height="56" rx="14" fill="url(#ga21caf)" stroke="#e879f9" stroke-width="2.5"/></g>
+<text x="706.0" y="1630.0" class="ct" text-anchor="middle">SCA + SAST</text>
+<text x="706.0" y="1647.0" class="cs" text-anchor="middle">Trivy · SonarCloud</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:1.71s"><rect x="804" y="1604" width="160" height="56" rx="14" fill="url(#ga21caf)" stroke="#e879f9" stroke-width="2.5"/></g>
+<text x="884.0" y="1630.0" class="ct" text-anchor="middle">Image + scan</text>
+<text x="884.0" y="1647.0" class="cs" text-anchor="middle">Docker · Trivy image</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:2.13s"><rect x="982" y="1604" width="160" height="56" rx="14" fill="url(#ga21caf)" stroke="#e879f9" stroke-width="2.5"/></g>
+<text x="1062.0" y="1630.0" class="ct" text-anchor="middle">ECR push</text>
+<text x="1062.0" y="1647.0" class="cs" text-anchor="middle">scan-on-push</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:2.55s"><rect x="1160" y="1604" width="160" height="56" rx="14" fill="url(#ga21caf)" stroke="#e879f9" stroke-width="2.5"/></g>
+<text x="1240.0" y="1630.0" class="ct" text-anchor="middle">CD dispatch</text>
+<text x="1240.0" y="1647.0" class="cs" text-anchor="middle">deploy.yml per env</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:2.97s"><rect x="1338" y="1604" width="160" height="56" rx="14" fill="url(#ga21caf)" stroke="#e879f9" stroke-width="2.5"/></g>
+<text x="1418.0" y="1630.0" class="ct" text-anchor="middle">Argo CD</text>
+<text x="1418.0" y="1647.0" class="cs" text-anchor="middle">sync to EKS</text>
+<path id="p45" class="flow" d="M430,1632 L448,1632" stroke="#e879f9" marker-end="url(#arr)"/>
+<path id="p46" class="flow" d="M608,1632 L626,1632" stroke="#e879f9" marker-end="url(#arr)"/>
+<path id="p47" class="flow" d="M786,1632 L804,1632" stroke="#e879f9" marker-end="url(#arr)"/>
+<path id="p48" class="flow" d="M964,1632 L982,1632" stroke="#e879f9" marker-end="url(#arr)"/>
+<path id="p49" class="flow" d="M1142,1632 L1160,1632" stroke="#e879f9" marker-end="url(#arr)"/>
+<path id="p50" class="flow" d="M1320,1632 L1338,1632" stroke="#e879f9" marker-end="url(#arr)"/>
+<path id="p51" class="flow" d="M250,1632 L270,1632" stroke="#e879f9" marker-end="url(#arr)"/>
+<g class="card" filter="url(#glow)"><rect x="50" y="1690" width="200" height="84" rx="14" fill="url(#g1d6bff)" stroke="#60a5fa" stroke-width="2.5"/></g>
+<text x="150" y="1720" class="ct" text-anchor="middle">BFF Service</text>
+<text x="150" y="1740" class="cs" text-anchor="middle">Node.js</text>
+<text x="150" y="1760" class="lbl2" text-anchor="middle">planned · repo to be created</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:0.60s"><rect x="270" y="1704" width="160" height="56" rx="14" fill="url(#g1d6bff)" stroke="#60a5fa" stroke-width="2.5"/></g>
+<text x="350.0" y="1730.0" class="ct" text-anchor="middle">Push</text>
+<text x="350.0" y="1747.0" class="cs" text-anchor="middle">feature · PR · main</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:1.02s"><rect x="448" y="1704" width="160" height="56" rx="14" fill="url(#g1d6bff)" stroke="#60a5fa" stroke-width="2.5"/></g>
+<text x="528.0" y="1730.0" class="ct" text-anchor="middle">Build + test</text>
+<text x="528.0" y="1747.0" class="cs" text-anchor="middle">mvn verify · JUnit</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:1.44s"><rect x="626" y="1704" width="160" height="56" rx="14" fill="url(#g1d6bff)" stroke="#60a5fa" stroke-width="2.5"/></g>
+<text x="706.0" y="1730.0" class="ct" text-anchor="middle">SCA + SAST</text>
+<text x="706.0" y="1747.0" class="cs" text-anchor="middle">Trivy · SonarCloud</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:1.86s"><rect x="804" y="1704" width="160" height="56" rx="14" fill="url(#g1d6bff)" stroke="#60a5fa" stroke-width="2.5"/></g>
+<text x="884.0" y="1730.0" class="ct" text-anchor="middle">Image + scan</text>
+<text x="884.0" y="1747.0" class="cs" text-anchor="middle">Docker · Trivy image</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:2.28s"><rect x="982" y="1704" width="160" height="56" rx="14" fill="url(#g1d6bff)" stroke="#60a5fa" stroke-width="2.5"/></g>
+<text x="1062.0" y="1730.0" class="ct" text-anchor="middle">ECR push</text>
+<text x="1062.0" y="1747.0" class="cs" text-anchor="middle">scan-on-push</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:2.70s"><rect x="1160" y="1704" width="160" height="56" rx="14" fill="url(#g1d6bff)" stroke="#60a5fa" stroke-width="2.5"/></g>
+<text x="1240.0" y="1730.0" class="ct" text-anchor="middle">CD dispatch</text>
+<text x="1240.0" y="1747.0" class="cs" text-anchor="middle">deploy.yml per env</text>
+<g class="card pipe" filter="url(#glow)" style="animation-delay:3.12s"><rect x="1338" y="1704" width="160" height="56" rx="14" fill="url(#g1d6bff)" stroke="#60a5fa" stroke-width="2.5"/></g>
+<text x="1418.0" y="1730.0" class="ct" text-anchor="middle">Argo CD</text>
+<text x="1418.0" y="1747.0" class="cs" text-anchor="middle">sync to EKS</text>
+<path id="p52" class="flow" d="M430,1732 L448,1732" stroke="#60a5fa" marker-end="url(#arr)"/>
+<path id="p53" class="flow" d="M608,1732 L626,1732" stroke="#60a5fa" marker-end="url(#arr)"/>
+<path id="p54" class="flow" d="M786,1732 L804,1732" stroke="#60a5fa" marker-end="url(#arr)"/>
+<path id="p55" class="flow" d="M964,1732 L982,1732" stroke="#60a5fa" marker-end="url(#arr)"/>
+<path id="p56" class="flow" d="M1142,1732 L1160,1732" stroke="#60a5fa" marker-end="url(#arr)"/>
+<path id="p57" class="flow" d="M1320,1732 L1338,1732" stroke="#60a5fa" marker-end="url(#arr)"/>
+<path id="p58" class="flow" d="M250,1732 L270,1732" stroke="#60a5fa" marker-end="url(#arr)"/>
+<text x="800.0" y="1852" class="foot" text-anchor="middle">Ledger: live pipeline (ledgerbuild.yml, CI + CD) · Notification, Payment, Fraud, BFF: planned pipelines</text>
+<text x="800.0" y="1878" class="foot" text-anchor="middle">Planned lanes show the pipeline each future repo will follow once it is created</text>
+  <circle r="8" fill="#60a5fa" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="0.00s"><mpath href="#p0"/></animateMotion></circle>
+<circle r="6" fill="#60a5fa" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p0"/></animateMotion></circle>
+<circle r="4" fill="#60a5fa" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p0"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#60a5fa" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.00s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.00s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.00s" repeatCount="indefinite" begin="0.00s"><mpath href="#p0"/></animateMotion></circle>
+<circle r="8" fill="#a5b4fc" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="0.30s"><mpath href="#p1"/></animateMotion></circle>
+<circle r="6" fill="#a5b4fc" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="0.12s"><mpath href="#p1"/></animateMotion></circle>
+<circle r="4" fill="#a5b4fc" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="-0.06s"><mpath href="#p1"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#a5b4fc" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.35s" repeatCount="indefinite" begin="0.30s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.35s" repeatCount="indefinite" begin="0.30s"/><animateMotion dur="2.35s" repeatCount="indefinite" begin="0.30s"><mpath href="#p1"/></animateMotion></circle>
+<circle r="8" fill="#fb7185" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.70s" repeatCount="indefinite" begin="0.60s"><mpath href="#p2"/></animateMotion></circle>
+<circle r="6" fill="#fb7185" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.70s" repeatCount="indefinite" begin="0.42s"><mpath href="#p2"/></animateMotion></circle>
+<circle r="4" fill="#fb7185" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.70s" repeatCount="indefinite" begin="0.24s"><mpath href="#p2"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fb7185" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.70s" repeatCount="indefinite" begin="0.60s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.70s" repeatCount="indefinite" begin="0.60s"/><animateMotion dur="2.70s" repeatCount="indefinite" begin="0.60s"><mpath href="#p2"/></animateMotion></circle>
+<circle r="8" fill="#fdba74" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="3.05s" repeatCount="indefinite" begin="0.90s"><mpath href="#p3"/></animateMotion></circle>
+<circle r="6" fill="#fdba74" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="3.05s" repeatCount="indefinite" begin="0.72s"><mpath href="#p3"/></animateMotion></circle>
+<circle r="4" fill="#fdba74" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="3.05s" repeatCount="indefinite" begin="0.54s"><mpath href="#p3"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fdba74" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="3.05s" repeatCount="indefinite" begin="0.90s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="3.05s" repeatCount="indefinite" begin="0.90s"/><animateMotion dur="3.05s" repeatCount="indefinite" begin="0.90s"><mpath href="#p3"/></animateMotion></circle>
+<circle r="8" fill="#2dd4bf" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="1.20s"><mpath href="#p4"/></animateMotion></circle>
+<circle r="6" fill="#2dd4bf" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="1.02s"><mpath href="#p4"/></animateMotion></circle>
+<circle r="4" fill="#2dd4bf" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="0.84s"><mpath href="#p4"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#2dd4bf" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.00s" repeatCount="indefinite" begin="1.20s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.00s" repeatCount="indefinite" begin="1.20s"/><animateMotion dur="2.00s" repeatCount="indefinite" begin="1.20s"><mpath href="#p4"/></animateMotion></circle>
+<circle r="8" fill="#2dd4bf" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="1.50s"><mpath href="#p5"/></animateMotion></circle>
+<circle r="6" fill="#2dd4bf" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="1.32s"><mpath href="#p5"/></animateMotion></circle>
+<circle r="4" fill="#2dd4bf" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="1.14s"><mpath href="#p5"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#2dd4bf" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.35s" repeatCount="indefinite" begin="1.50s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.35s" repeatCount="indefinite" begin="1.50s"/><animateMotion dur="2.35s" repeatCount="indefinite" begin="1.50s"><mpath href="#p5"/></animateMotion></circle>
+<circle r="8" fill="#60a5fa" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.70s" repeatCount="indefinite" begin="1.80s"><mpath href="#p6"/></animateMotion></circle>
+<circle r="6" fill="#60a5fa" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.70s" repeatCount="indefinite" begin="1.62s"><mpath href="#p6"/></animateMotion></circle>
+<circle r="4" fill="#60a5fa" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.70s" repeatCount="indefinite" begin="1.44s"><mpath href="#p6"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#60a5fa" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.70s" repeatCount="indefinite" begin="1.80s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.70s" repeatCount="indefinite" begin="1.80s"/><animateMotion dur="2.70s" repeatCount="indefinite" begin="1.80s"><mpath href="#p6"/></animateMotion></circle>
+<circle r="8" fill="#fb7185" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="3.05s" repeatCount="indefinite" begin="0.00s"><mpath href="#p7"/></animateMotion></circle>
+<circle r="6" fill="#fb7185" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="3.05s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p7"/></animateMotion></circle>
+<circle r="4" fill="#fb7185" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="3.05s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p7"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fb7185" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="3.05s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="3.05s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="3.05s" repeatCount="indefinite" begin="0.00s"><mpath href="#p7"/></animateMotion></circle>
+<circle r="8" fill="#60a5fa" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="0.30s"><mpath href="#p8"/></animateMotion></circle>
+<circle r="6" fill="#60a5fa" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="0.12s"><mpath href="#p8"/></animateMotion></circle>
+<circle r="4" fill="#60a5fa" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="-0.06s"><mpath href="#p8"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#60a5fa" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.00s" repeatCount="indefinite" begin="0.30s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.00s" repeatCount="indefinite" begin="0.30s"/><animateMotion dur="2.00s" repeatCount="indefinite" begin="0.30s"><mpath href="#p8"/></animateMotion></circle>
+<circle r="8" fill="#f472b6" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="0.60s"><mpath href="#p9"/></animateMotion></circle>
+<circle r="6" fill="#f472b6" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="0.42s"><mpath href="#p9"/></animateMotion></circle>
+<circle r="4" fill="#f472b6" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="0.24s"><mpath href="#p9"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#f472b6" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.35s" repeatCount="indefinite" begin="0.60s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.35s" repeatCount="indefinite" begin="0.60s"/><animateMotion dur="2.35s" repeatCount="indefinite" begin="0.60s"><mpath href="#p9"/></animateMotion></circle>
+<circle r="8" fill="#fb7185" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.70s" repeatCount="indefinite" begin="0.90s"><mpath href="#p10"/></animateMotion></circle>
+<circle r="6" fill="#fb7185" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.70s" repeatCount="indefinite" begin="0.72s"><mpath href="#p10"/></animateMotion></circle>
+<circle r="4" fill="#fb7185" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.70s" repeatCount="indefinite" begin="0.54s"><mpath href="#p10"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fb7185" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.70s" repeatCount="indefinite" begin="0.90s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.70s" repeatCount="indefinite" begin="0.90s"/><animateMotion dur="2.70s" repeatCount="indefinite" begin="0.90s"><mpath href="#p10"/></animateMotion></circle>
+<circle r="8" fill="#fdba74" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="3.05s" repeatCount="indefinite" begin="1.20s"><mpath href="#p11"/></animateMotion></circle>
+<circle r="6" fill="#fdba74" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="3.05s" repeatCount="indefinite" begin="1.02s"><mpath href="#p11"/></animateMotion></circle>
+<circle r="4" fill="#fdba74" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="3.05s" repeatCount="indefinite" begin="0.84s"><mpath href="#p11"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fdba74" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="3.05s" repeatCount="indefinite" begin="1.20s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="3.05s" repeatCount="indefinite" begin="1.20s"/><animateMotion dur="3.05s" repeatCount="indefinite" begin="1.20s"><mpath href="#p11"/></animateMotion></circle>
+<circle r="8" fill="#fde047" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="1.50s"><mpath href="#p12"/></animateMotion></circle>
+<circle r="6" fill="#fde047" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="1.32s"><mpath href="#p12"/></animateMotion></circle>
+<circle r="4" fill="#fde047" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="1.14s"><mpath href="#p12"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fde047" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.00s" repeatCount="indefinite" begin="1.50s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.00s" repeatCount="indefinite" begin="1.50s"/><animateMotion dur="2.00s" repeatCount="indefinite" begin="1.50s"><mpath href="#p12"/></animateMotion></circle>
+<circle r="8" fill="#e879f9" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="1.80s"><mpath href="#p13"/></animateMotion></circle>
+<circle r="6" fill="#e879f9" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="1.62s"><mpath href="#p13"/></animateMotion></circle>
+<circle r="4" fill="#e879f9" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="1.44s"><mpath href="#p13"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#e879f9" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.35s" repeatCount="indefinite" begin="1.80s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.35s" repeatCount="indefinite" begin="1.80s"/><animateMotion dur="2.35s" repeatCount="indefinite" begin="1.80s"><mpath href="#p13"/></animateMotion></circle>
+<circle r="8" fill="#fde047" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.70s" repeatCount="indefinite" begin="0.00s"><mpath href="#p14"/></animateMotion></circle>
+<circle r="6" fill="#fde047" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.70s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p14"/></animateMotion></circle>
+<circle r="4" fill="#fde047" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.70s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p14"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fde047" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.70s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.70s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.70s" repeatCount="indefinite" begin="0.00s"><mpath href="#p14"/></animateMotion></circle>
+<circle r="8" fill="#fde047" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="3.05s" repeatCount="indefinite" begin="0.30s"><mpath href="#p15"/></animateMotion></circle>
+<circle r="6" fill="#fde047" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="3.05s" repeatCount="indefinite" begin="0.12s"><mpath href="#p15"/></animateMotion></circle>
+<circle r="4" fill="#fde047" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="3.05s" repeatCount="indefinite" begin="-0.06s"><mpath href="#p15"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fde047" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="3.05s" repeatCount="indefinite" begin="0.30s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="3.05s" repeatCount="indefinite" begin="0.30s"/><animateMotion dur="3.05s" repeatCount="indefinite" begin="0.30s"><mpath href="#p15"/></animateMotion></circle>
+<circle r="8" fill="#fde047" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="0.60s"><mpath href="#p16"/></animateMotion></circle>
+<circle r="6" fill="#fde047" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="0.42s"><mpath href="#p16"/></animateMotion></circle>
+<circle r="4" fill="#fde047" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.00s" repeatCount="indefinite" begin="0.24s"><mpath href="#p16"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fde047" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.00s" repeatCount="indefinite" begin="0.60s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.00s" repeatCount="indefinite" begin="0.60s"/><animateMotion dur="2.00s" repeatCount="indefinite" begin="0.60s"><mpath href="#p16"/></animateMotion></circle>
+<circle r="8" fill="#fde047" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="0.90s"><mpath href="#p17"/></animateMotion></circle>
+<circle r="6" fill="#fde047" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="0.72s"><mpath href="#p17"/></animateMotion></circle>
+<circle r="4" fill="#fde047" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.35s" repeatCount="indefinite" begin="0.54s"><mpath href="#p17"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fde047" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.35s" repeatCount="indefinite" begin="0.90s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.35s" repeatCount="indefinite" begin="0.90s"/><animateMotion dur="2.35s" repeatCount="indefinite" begin="0.90s"><mpath href="#p17"/></animateMotion></circle>
+<circle r="8" fill="#a5b4fc" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p18"/></animateMotion></circle>
+<circle r="6" fill="#a5b4fc" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p18"/></animateMotion></circle>
+<circle r="4" fill="#a5b4fc" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p18"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#a5b4fc" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p18"/></animateMotion></circle>
+<circle r="8" fill="#60a5fa" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p19"/></animateMotion></circle>
+<circle r="6" fill="#60a5fa" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p19"/></animateMotion></circle>
+<circle r="4" fill="#60a5fa" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p19"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#60a5fa" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p19"/></animateMotion></circle>
+<circle r="8" fill="#fdba74" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p20"/></animateMotion></circle>
+<circle r="6" fill="#fdba74" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p20"/></animateMotion></circle>
+<circle r="4" fill="#fdba74" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p20"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fdba74" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p20"/></animateMotion></circle>
+<circle r="8" fill="#2dd4bf" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p21"/></animateMotion></circle>
+<circle r="6" fill="#2dd4bf" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p21"/></animateMotion></circle>
+<circle r="4" fill="#2dd4bf" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p21"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#2dd4bf" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p21"/></animateMotion></circle>
+<circle r="8" fill="#fde047" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p22"/></animateMotion></circle>
+<circle r="6" fill="#fde047" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p22"/></animateMotion></circle>
+<circle r="4" fill="#fde047" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p22"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fde047" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p22"/></animateMotion></circle>
+<circle r="8" fill="#f472b6" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p23"/></animateMotion></circle>
+<circle r="6" fill="#f472b6" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p23"/></animateMotion></circle>
+<circle r="4" fill="#f472b6" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p23"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#f472b6" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p23"/></animateMotion></circle>
+<circle r="8" fill="#4ade80" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p24"/></animateMotion></circle>
+<circle r="6" fill="#4ade80" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p24"/></animateMotion></circle>
+<circle r="4" fill="#4ade80" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p24"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#4ade80" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p24"/></animateMotion></circle>
+<circle r="8" fill="#4ade80" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p25"/></animateMotion></circle>
+<circle r="6" fill="#4ade80" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p25"/></animateMotion></circle>
+<circle r="4" fill="#4ade80" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p25"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#4ade80" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p25"/></animateMotion></circle>
+<circle r="8" fill="#4ade80" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p26"/></animateMotion></circle>
+<circle r="6" fill="#4ade80" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p26"/></animateMotion></circle>
+<circle r="4" fill="#4ade80" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p26"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#4ade80" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p26"/></animateMotion></circle>
+<circle r="8" fill="#4ade80" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p27"/></animateMotion></circle>
+<circle r="6" fill="#4ade80" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p27"/></animateMotion></circle>
+<circle r="4" fill="#4ade80" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p27"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#4ade80" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p27"/></animateMotion></circle>
+<circle r="8" fill="#4ade80" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p28"/></animateMotion></circle>
+<circle r="6" fill="#4ade80" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p28"/></animateMotion></circle>
+<circle r="4" fill="#4ade80" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p28"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#4ade80" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p28"/></animateMotion></circle>
+<circle r="8" fill="#4ade80" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p29"/></animateMotion></circle>
+<circle r="6" fill="#4ade80" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p29"/></animateMotion></circle>
+<circle r="4" fill="#4ade80" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p29"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#4ade80" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p29"/></animateMotion></circle>
+<circle r="8" fill="#4ade80" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p30"/></animateMotion></circle>
+<circle r="6" fill="#4ade80" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p30"/></animateMotion></circle>
+<circle r="4" fill="#4ade80" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p30"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#4ade80" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p30"/></animateMotion></circle>
+<circle r="8" fill="#2dd4bf" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p31"/></animateMotion></circle>
+<circle r="6" fill="#2dd4bf" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p31"/></animateMotion></circle>
+<circle r="4" fill="#2dd4bf" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p31"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#2dd4bf" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p31"/></animateMotion></circle>
+<circle r="8" fill="#2dd4bf" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p32"/></animateMotion></circle>
+<circle r="6" fill="#2dd4bf" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p32"/></animateMotion></circle>
+<circle r="4" fill="#2dd4bf" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p32"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#2dd4bf" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p32"/></animateMotion></circle>
+<circle r="8" fill="#2dd4bf" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p33"/></animateMotion></circle>
+<circle r="6" fill="#2dd4bf" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p33"/></animateMotion></circle>
+<circle r="4" fill="#2dd4bf" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p33"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#2dd4bf" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p33"/></animateMotion></circle>
+<circle r="8" fill="#2dd4bf" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p34"/></animateMotion></circle>
+<circle r="6" fill="#2dd4bf" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p34"/></animateMotion></circle>
+<circle r="4" fill="#2dd4bf" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p34"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#2dd4bf" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p34"/></animateMotion></circle>
+<circle r="8" fill="#2dd4bf" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p35"/></animateMotion></circle>
+<circle r="6" fill="#2dd4bf" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p35"/></animateMotion></circle>
+<circle r="4" fill="#2dd4bf" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p35"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#2dd4bf" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p35"/></animateMotion></circle>
+<circle r="8" fill="#2dd4bf" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p36"/></animateMotion></circle>
+<circle r="6" fill="#2dd4bf" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p36"/></animateMotion></circle>
+<circle r="4" fill="#2dd4bf" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p36"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#2dd4bf" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p36"/></animateMotion></circle>
+<circle r="8" fill="#2dd4bf" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p37"/></animateMotion></circle>
+<circle r="6" fill="#2dd4bf" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p37"/></animateMotion></circle>
+<circle r="4" fill="#2dd4bf" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p37"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#2dd4bf" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p37"/></animateMotion></circle>
+<circle r="8" fill="#fb7185" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p38"/></animateMotion></circle>
+<circle r="6" fill="#fb7185" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p38"/></animateMotion></circle>
+<circle r="4" fill="#fb7185" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p38"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fb7185" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p38"/></animateMotion></circle>
+<circle r="8" fill="#fb7185" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p39"/></animateMotion></circle>
+<circle r="6" fill="#fb7185" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p39"/></animateMotion></circle>
+<circle r="4" fill="#fb7185" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p39"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fb7185" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p39"/></animateMotion></circle>
+<circle r="8" fill="#fb7185" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p40"/></animateMotion></circle>
+<circle r="6" fill="#fb7185" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p40"/></animateMotion></circle>
+<circle r="4" fill="#fb7185" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p40"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fb7185" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p40"/></animateMotion></circle>
+<circle r="8" fill="#fb7185" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p41"/></animateMotion></circle>
+<circle r="6" fill="#fb7185" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p41"/></animateMotion></circle>
+<circle r="4" fill="#fb7185" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p41"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fb7185" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p41"/></animateMotion></circle>
+<circle r="8" fill="#fb7185" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p42"/></animateMotion></circle>
+<circle r="6" fill="#fb7185" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p42"/></animateMotion></circle>
+<circle r="4" fill="#fb7185" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p42"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fb7185" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p42"/></animateMotion></circle>
+<circle r="8" fill="#fb7185" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p43"/></animateMotion></circle>
+<circle r="6" fill="#fb7185" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p43"/></animateMotion></circle>
+<circle r="4" fill="#fb7185" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p43"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fb7185" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p43"/></animateMotion></circle>
+<circle r="8" fill="#fb7185" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p44"/></animateMotion></circle>
+<circle r="6" fill="#fb7185" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p44"/></animateMotion></circle>
+<circle r="4" fill="#fb7185" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p44"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#fb7185" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p44"/></animateMotion></circle>
+<circle r="8" fill="#e879f9" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p45"/></animateMotion></circle>
+<circle r="6" fill="#e879f9" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p45"/></animateMotion></circle>
+<circle r="4" fill="#e879f9" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p45"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#e879f9" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p45"/></animateMotion></circle>
+<circle r="8" fill="#e879f9" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p46"/></animateMotion></circle>
+<circle r="6" fill="#e879f9" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p46"/></animateMotion></circle>
+<circle r="4" fill="#e879f9" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p46"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#e879f9" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p46"/></animateMotion></circle>
+<circle r="8" fill="#e879f9" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p47"/></animateMotion></circle>
+<circle r="6" fill="#e879f9" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p47"/></animateMotion></circle>
+<circle r="4" fill="#e879f9" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p47"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#e879f9" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p47"/></animateMotion></circle>
+<circle r="8" fill="#e879f9" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p48"/></animateMotion></circle>
+<circle r="6" fill="#e879f9" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p48"/></animateMotion></circle>
+<circle r="4" fill="#e879f9" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p48"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#e879f9" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p48"/></animateMotion></circle>
+<circle r="8" fill="#e879f9" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p49"/></animateMotion></circle>
+<circle r="6" fill="#e879f9" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p49"/></animateMotion></circle>
+<circle r="4" fill="#e879f9" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p49"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#e879f9" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p49"/></animateMotion></circle>
+<circle r="8" fill="#e879f9" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p50"/></animateMotion></circle>
+<circle r="6" fill="#e879f9" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p50"/></animateMotion></circle>
+<circle r="4" fill="#e879f9" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p50"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#e879f9" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p50"/></animateMotion></circle>
+<circle r="8" fill="#e879f9" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p51"/></animateMotion></circle>
+<circle r="6" fill="#e879f9" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p51"/></animateMotion></circle>
+<circle r="4" fill="#e879f9" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p51"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#e879f9" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p51"/></animateMotion></circle>
+<circle r="8" fill="#60a5fa" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p52"/></animateMotion></circle>
+<circle r="6" fill="#60a5fa" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p52"/></animateMotion></circle>
+<circle r="4" fill="#60a5fa" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p52"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#60a5fa" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p52"/></animateMotion></circle>
+<circle r="8" fill="#60a5fa" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p53"/></animateMotion></circle>
+<circle r="6" fill="#60a5fa" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p53"/></animateMotion></circle>
+<circle r="4" fill="#60a5fa" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p53"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#60a5fa" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p53"/></animateMotion></circle>
+<circle r="8" fill="#60a5fa" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p54"/></animateMotion></circle>
+<circle r="6" fill="#60a5fa" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p54"/></animateMotion></circle>
+<circle r="4" fill="#60a5fa" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p54"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#60a5fa" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p54"/></animateMotion></circle>
+<circle r="8" fill="#60a5fa" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p55"/></animateMotion></circle>
+<circle r="6" fill="#60a5fa" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p55"/></animateMotion></circle>
+<circle r="4" fill="#60a5fa" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p55"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#60a5fa" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p55"/></animateMotion></circle>
+<circle r="8" fill="#60a5fa" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p56"/></animateMotion></circle>
+<circle r="6" fill="#60a5fa" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p56"/></animateMotion></circle>
+<circle r="4" fill="#60a5fa" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p56"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#60a5fa" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p56"/></animateMotion></circle>
+<circle r="8" fill="#60a5fa" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p57"/></animateMotion></circle>
+<circle r="6" fill="#60a5fa" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p57"/></animateMotion></circle>
+<circle r="4" fill="#60a5fa" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p57"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#60a5fa" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p57"/></animateMotion></circle>
+<circle r="8" fill="#60a5fa" opacity="1" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p58"/></animateMotion></circle>
+<circle r="6" fill="#60a5fa" opacity="0.6" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.18s"><mpath href="#p58"/></animateMotion></circle>
+<circle r="4" fill="#60a5fa" opacity="0.35" stroke="none" stroke-width="0" filter="url(#glow)"><animateMotion dur="2.40s" repeatCount="indefinite" begin="-0.36s"><mpath href="#p58"/></animateMotion></circle>
+<circle r="8" fill="none" stroke="#60a5fa" stroke-width="3"><animate attributeName="r" values="8;14;8" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animate attributeName="stroke-opacity" values=".5;0;.5" dur="2.40s" repeatCount="indefinite" begin="0.00s"/><animateMotion dur="2.40s" repeatCount="indefinite" begin="0.00s"><mpath href="#p58"/></animateMotion></circle>
+</svg>
